@@ -48,8 +48,16 @@
   .feat p{font-size:15.5px;color:var(--soft)}
   .shot{border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 24px 60px -34px rgba(31,21,71,.35);background:#fff}
   .shot img{width:100%;display:block}
-  .shot.phone{max-width:290px;max-height:480px;margin:0 auto;overflow:hidden;position:relative}
+  .shot.phone{max-width:290px;max-height:600px;margin:0 auto;overflow:hidden;position:relative}
   .shot.phone::after{content:"";position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(transparent,#fff)}
+  .shot.web{transform:scale(1.12)}
+  @media(max-width:760px){.shot.web{transform:none}}
+
+  .compo{position:relative;padding:0 0 26px 0}
+  .compo .web{border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 24px 60px -34px rgba(31,21,71,.35);background:#fff}
+  .compo .web img{width:100%;display:block}
+  .compo .cel{position:absolute;right:-6px;bottom:0;width:36%;border-radius:16px;overflow:hidden;border:3px solid #fff;box-shadow:0 22px 48px -22px rgba(31,21,71,.55);max-height:78%;background:#fff}
+  .compo .cel img{width:100%;display:block}
 
   .mini{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:10px 0 44px}
   @media(max-width:760px){.mini{grid-template-columns:1fr}}
@@ -95,7 +103,7 @@
       <h2>Todo tu día, <em>a un clic</em></h2>
       <p>La agenda nueva se navega sola: vista diaria, semanal o mensual, y un turno nuevo se carga en segundos. Menos pasos, menos vueltas — más tiempo para atender.</p>
     </div>
-    <div class="shot"><img src="img/agenda.png" alt="Agenda semanal de Turnau"></div>
+    <div class="shot web"><img src="img/agenda.png" alt="Agenda semanal de Turnau"></div>
   </div>
 
   <div class="feat">
@@ -113,7 +121,7 @@
       <h2>Tus servicios, <em>ordenados</em></h2>
       <p>Organizalos en cápsulas por categoría y sumale una foto a cada servicio. Tus clientes encuentran lo que buscan al instante — y todo se ve como tu trabajo merece.</p>
     </div>
-    <div class="shot"><img src="img/servicios.png" alt="Servicios organizados en cápsulas"></div>
+    <div class="shot web"><img src="img/servicios.png" alt="Servicios organizados en cápsulas"></div>
   </div>
 
   <div class="feat">
@@ -122,7 +130,7 @@
       <h2>Mostrá tu trabajo, <em>con historia</em></h2>
       <p>El portfolio ahora lleva una descripción en cada foto: qué servicio es, qué se hizo. Quien te descubre en el Marketplace no ve fotos sueltas — ve resultados con nombre y apellido.</p>
     </div>
-    <div class="shot"><img src="img/porfolio.png" alt="Portfolio con descripciones"></div>
+    <div class="shot web"><img src="img/porfolio.png" alt="Portfolio con descripciones"></div>
   </div>
 
   <div class="mini">
@@ -150,7 +158,10 @@
       <h2>Que te encuentren <em>más fácil</em></h2>
       <p>El buscador nuevo filtra por categoría, ubicación y ordena por cercanía, precio o valoración. Tu vidriera digital trabaja todos los días para traerte clientes nuevos.</p>
     </div>
-    <div class="shot phone"><img src="img/marketplace.png" alt="Marketplace de Turnau"></div>
+    <div class="compo">
+      <div class="web"><img src="img/marketplace-web.png" alt="Marketplace de Turnau en la web"></div>
+      <div class="cel"><img src="img/marketplace-celu.png" alt="Ficha del centro en el celular"></div>
+    </div>
   </div>
 
   <div class="final">
