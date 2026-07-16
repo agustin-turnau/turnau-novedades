@@ -13,7 +13,11 @@
     --grad:linear-gradient(135deg,#6851FC 0%,#FF9912 100%);
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;position:relative}
+  body::before{content:"";position:fixed;top:-240px;right:-180px;width:620px;height:620px;border-radius:50%;
+    filter:blur(95px);opacity:.34;background:radial-gradient(circle,#9797FC,transparent 70%);pointer-events:none;z-index:-1}
+  body::after{content:"";position:fixed;bottom:-280px;left:-140px;width:560px;height:560px;border-radius:50%;
+    filter:blur(105px);opacity:.26;background:radial-gradient(circle,#FFB347,transparent 70%);pointer-events:none;z-index:-1}
   .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
 
   header{padding:64px 0 48px;text-align:center}
@@ -30,7 +34,15 @@
   .feat{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;padding:44px 0;border-top:1px solid var(--line)}
   .feat:nth-child(even) .txt{order:2}
   @media(max-width:760px){.feat{grid-template-columns:1fr;gap:20px}.feat:nth-child(even) .txt{order:0}}
-  .pill{display:inline-block;background:rgba(104,81,252,.09);color:var(--purple);font-size:12px;font-weight:700;padding:5px 13px;border-radius:99px;margin-bottom:10px}
+  .pill{display:inline-block;background:linear-gradient(135deg,rgba(104,81,252,.13),rgba(255,153,18,.11));color:var(--purple);font-size:12px;font-weight:700;padding:5px 13px;border-radius:99px;margin-bottom:10px}
+
+  .collage{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:38px}
+  .collage img{width:150px;height:195px;object-fit:cover;border-radius:20px;border:3px solid #fff;
+    box-shadow:0 22px 44px -24px rgba(31,21,71,.5)}
+  .collage img:nth-child(odd){transform:rotate(-2.5deg)}
+  .collage img:nth-child(even){transform:rotate(2.2deg) translateY(8px)}
+  .collage-cap{text-align:center;font-size:13.5px;color:var(--mute);font-weight:600;margin-top:22px}
+  .collage-cap b{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
   .feat h2{font-size:26px;font-weight:800;letter-spacing:-.02em;margin-bottom:8px}
   .feat h2 em{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;color:var(--orange)}
   .feat p{font-size:15.5px;color:var(--soft)}
@@ -40,7 +52,8 @@
 
   .mini{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:10px 0 44px}
   @media(max-width:760px){.mini{grid-template-columns:1fr}}
-  .mini .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px}
+  .mini .card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;overflow:hidden}
+  .mini .card::before{content:"";position:absolute;top:0;left:22px;right:22px;height:3px;background:var(--grad);border-radius:3px;opacity:.85}
   .mini h3{font-size:17px;font-weight:800;margin-bottom:6px}
   .mini p{font-size:14.5px;color:var(--soft)}
 
@@ -66,6 +79,13 @@
       <a class="btn p" href="https://admin.turnau.com.ar">Entrar y verla →</a>
       <a class="btn s" href="https://admin.turnau.com.ar/onboarding">¿Todavía no usás Turnau? 14 días gratis</a>
     </div>
+    <div class="collage">
+      <img src="img/foto-peluqueria.png" alt="Peluquería">
+      <img src="img/foto-barberia.png" alt="Barbería">
+      <img src="img/foto-manos-y-pies.png" alt="Manos y pies">
+      <img src="img/foto-spa-y-masajes.png" alt="Spa y masajes">
+    </div>
+    <div class="collage-cap">Peluquería · Barbería · Manos y pies · Spa y masajes — y ahora, <b>Salud y Bienestar</b> 🌿</div>
   </header>
 
   <div class="feat">
