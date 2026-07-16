@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Turnau · Novedades — La plataforma se renovó</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FAF7F2; --card:#fff; --ink:#1F1547; --soft:#5A5275; --mute:#8B83A8;
+    --purple:#6851FC; --purple-deep:#392FBC; --orange:#FF9912;
+    --line:rgba(31,21,71,.08);
+    --grad:linear-gradient(135deg,#6851FC 0%,#FF9912 100%);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+  header{padding:64px 0 48px;text-align:center}
+  .kicker{font-size:12px;font-weight:800;letter-spacing:.14em;color:var(--purple);text-transform:uppercase}
+  h1{font-size:clamp(34px,6vw,54px);font-weight:800;letter-spacing:-.03em;line-height:1.08;margin:10px 0 14px}
+  h1 em{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;
+    background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .sub{font-size:17px;color:var(--soft);max-width:560px;margin:0 auto 26px}
+  .ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:7px;border-radius:99px;padding:13px 26px;font-weight:700;font-size:15px;text-decoration:none}
+  .btn.p{background:var(--grad);color:#fff;box-shadow:0 10px 24px -12px rgba(104,81,252,.65)}
+  .btn.s{border:1.5px solid rgba(31,21,71,.16);color:var(--ink);background:#fff}
+
+  .feat{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;padding:44px 0;border-top:1px solid var(--line)}
+  .feat:nth-child(even) .txt{order:2}
+  @media(max-width:760px){.feat{grid-template-columns:1fr;gap:20px}.feat:nth-child(even) .txt{order:0}}
+  .pill{display:inline-block;background:rgba(104,81,252,.09);color:var(--purple);font-size:12px;font-weight:700;padding:5px 13px;border-radius:99px;margin-bottom:10px}
+  .feat h2{font-size:26px;font-weight:800;letter-spacing:-.02em;margin-bottom:8px}
+  .feat h2 em{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;color:var(--orange)}
+  .feat p{font-size:15.5px;color:var(--soft)}
+  .shot{border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 24px 60px -34px rgba(31,21,71,.35);background:#fff}
+  .shot img{width:100%;display:block}
+  .shot.phone{max-width:320px;margin:0 auto}
+
+  .mini{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:10px 0 44px}
+  @media(max-width:760px){.mini{grid-template-columns:1fr}}
+  .mini .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px}
+  .mini h3{font-size:17px;font-weight:800;margin-bottom:6px}
+  .mini p{font-size:14.5px;color:var(--soft)}
+
+  .final{background:linear-gradient(120deg,var(--purple-deep),var(--purple) 55%,var(--orange));border-radius:24px;color:#fff;text-align:center;padding:52px 30px;margin:20px 0 64px}
+  .final h2{font-size:clamp(26px,4vw,36px);font-weight:800;letter-spacing:-.02em;margin-bottom:8px}
+  .final p{opacity:.92;margin-bottom:22px;font-size:16px}
+  .final .btn.p{background:#fff;color:var(--purple-deep);box-shadow:none}
+  .final .btn.s{border-color:rgba(255,255,255,.5);color:#fff;background:transparent}
+  .final small{display:block;margin-top:14px;font-size:12.5px;opacity:.8}
+  footer{text-align:center;color:var(--mute);font-size:13px;padding-bottom:40px}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <div class="kicker">Novedades · Julio 2026</div>
+    <h1><span style="color:var(--purple)"><span style="color:var(--orange)">t</span>urnau</span> se <em>renovó</em></h1>
+    <p class="sub">Más simple, más rápida y con todo tu negocio en un solo lugar. Esto es lo nuevo que ya está esperándote adentro.</p>
+    <div class="ctas">
+      <a class="btn p" href="https://admin.turnau.com.ar">Entrar y verla →</a>
+      <a class="btn s" href="https://admin.turnau.com.ar/onboarding">¿Todavía no usás Turnau? 14 días gratis</a>
+    </div>
+  </header>
+
+  <div class="feat">
+    <div class="txt">
+      <span class="pill">Agenda</span>
+      <h2>Todo tu día, <em>a un clic</em></h2>
+      <p>La agenda nueva se navega sola: vista diaria, semanal o mensual, y un turno nuevo se carga en segundos. Menos pasos, menos vueltas — más tiempo para atender.</p>
+    </div>
+    <div class="shot"><img src="img/agenda.png" alt="Agenda semanal de Turnau"></div>
+  </div>
+
+  <div class="feat">
+    <div class="txt">
+      <span class="pill">Agenda</span>
+      <h2>Arrastrá el turno <em>y listo</em></h2>
+      <p>¿Se movió un horario? Agarrá el turno y llevalo a su nuevo lugar, viendo la hora en vivo mientras lo arrastrás. ¿Cambió la duración? Estiralo desde el borde. Tu agenda se acomoda como vos querés, directo desde el calendario.</p>
+    </div>
+    <div class="shot phone"><img src="img/agenda-celu.png" alt="Agenda por hora en el celular"></div>
+  </div>
+
+  <div class="feat">
+    <div class="txt">
+      <span class="pill">Servicios</span>
+      <h2>Tus servicios, <em>ordenados</em></h2>
+      <p>Organizalos en cápsulas por categoría y sumale una foto a cada servicio. Tus clientes encuentran lo que buscan al instante — y todo se ve como tu trabajo merece.</p>
+    </div>
+    <div class="shot"><img src="img/servicios.png" alt="Servicios organizados en cápsulas"></div>
+  </div>
+
+  <div class="feat">
+    <div class="txt">
+      <span class="pill">Portfolio</span>
+      <h2>Mostrá tu trabajo, <em>con historia</em></h2>
+      <p>El portfolio ahora lleva una descripción en cada foto: qué servicio es, qué se hizo. Quien te descubre en el Marketplace no ve fotos sueltas — ve resultados con nombre y apellido.</p>
+    </div>
+    <div class="shot"><img src="img/porfolio.png" alt="Portfolio con descripciones"></div>
+  </div>
+
+  <div class="mini">
+    <div class="card">
+      <h3>🔒 Bloqueá horarios en dos toques</h3>
+      <p>¿Salida rápida, trámite, almuerzo largo? Bloqueá el rango desde la agenda y nadie puede reservarte ahí. Tu tiempo, tus reglas.</p>
+    </div>
+    <div class="card">
+      <h3>🌿 Nueva categoría: Salud y Bienestar</h3>
+      <p>El Marketplace se amplía: nutrición, kinesiología, terapias y más. Más rubros descubriendo Turnau — y más clientes nuevos buscando cerca tuyo.</p>
+    </div>
+    <div class="card">
+      <h3>👥 Agendas en paralelo</h3>
+      <p>En la vista diaria, ves a todos tus profesionales lado a lado, cada uno en su columna. El día completo del equipo, de un solo vistazo.</p>
+    </div>
+    <div class="card">
+      <h3>📇 Cargá clientes solo con el WhatsApp</h3>
+      <p>El email ya no es obligatorio: alcanza con el número para sumar un cliente. (El mail sigue sumando para que le lleguen los recordatorios — pero si no lo querés usar, ahora no hay drama.)</p>
+    </div>
+  </div>
+
+  <div class="feat" style="border-top:1px solid var(--line)">
+    <div class="txt">
+      <span class="pill">Marketplace</span>
+      <h2>Que te encuentren <em>más fácil</em></h2>
+      <p>El buscador nuevo filtra por categoría, ubicación y ordena por cercanía, precio o valoración. Tu vidriera digital trabaja todos los días para traerte clientes nuevos.</p>
+    </div>
+    <div class="shot phone"><img src="img/marketplace.png" alt="Marketplace de Turnau"></div>
+  </div>
+
+  <div class="final">
+    <h2>Entrá y recorrela — está todo listo</h2>
+    <p>Si ya usás Turnau, las novedades te están esperando. Si todavía no, este es el momento.</p>
+    <div class="ctas">
+      <a class="btn p" href="https://admin.turnau.com.ar">Entrar a Turnau</a>
+      <a class="btn s" href="https://admin.turnau.com.ar/onboarding">Probar 14 días gratis</a>
+    </div>
+    <small>14 días gratis · sin tarjeta · en pesos, sin variación por el dólar</small>
+  </div>
+
+</div>
+
+<footer>Turnau · Gestioná, cobrá y crecé desde un solo lugar · www.turnau.com.ar</footer>
+
+</body>
+</html>
