@@ -48,7 +48,8 @@
   .feat p{font-size:15.5px;color:var(--soft)}
   .shot{border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 24px 60px -34px rgba(31,21,71,.35);background:#fff}
   .shot img{width:100%;display:block}
-  .shot.phone{max-width:320px;margin:0 auto}
+  .shot.phone{max-width:290px;max-height:480px;margin:0 auto;overflow:hidden;position:relative}
+  .shot.phone::after{content:"";position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(transparent,#fff)}
 
   .mini{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:10px 0 44px}
   @media(max-width:760px){.mini{grid-template-columns:1fr}}
@@ -85,7 +86,7 @@
       <img src="img/gente-manos-y-pies.jpg" alt="Manos y pies">
       <img src="img/gente-salud-y-bienestar.jpg" alt="Salud y bienestar">
     </div>
-    <div class="collage-cap">Peluquería · Barbería · Manos y pies · Spa y masajes — y ahora, <b>Salud y Bienestar</b> 🌿</div>
+    <div class="collage-cap" style="max-width:640px;margin-left:auto;margin-right:auto">Peluquería · Barbería · Manos y pies · Spa y masajes · Estética facial y corporal · Cejas y pestañas · Depilación · Maquillaje · Estética masculina — y ahora, <b>Salud y Bienestar</b> 🌿</div>
   </header>
 
   <div class="feat">
